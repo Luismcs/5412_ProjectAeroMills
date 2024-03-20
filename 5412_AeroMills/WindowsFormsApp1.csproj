@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC249AB0-4CDC-47D0-BBF5-5FB5143D69E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCargo.Designer.cs">
+      <DependentUpon>AddCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddComercial.Designer.cs">
+      <DependentUpon>AddComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJet.Designer.cs">
+      <DependentUpon>AddJet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNew.Designer.cs">
+      <DependentUpon>AddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSmallPlane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSmallPlane.Designer.cs">
+      <DependentUpon>AddSmallPlane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AeronaveComercial.cs" />
+    <Compile Include="AeronaveMercadorias.cs" />
+    <Compile Include="AeronaveParticular.cs" />
+    <Compile Include="Aeroporto.cs" />
+    <Compile Include="Availability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Availability.Designer.cs">
+      <DependentUpon>Availability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aviao.cs" />
+    <Compile Include="Avioneta.cs" />
+    <Compile Include="Bookings2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings2.Designer.cs">
+      <DependentUpon>Bookings2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeAirplane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeAirplane.Designer.cs">
+      <DependentUpon>ChangeAirplane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeCargo.Designer.cs">
+      <DependentUpon>ChangeCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeComercial.Designer.cs">
+      <DependentUpon>ChangeComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeGeralState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeGeralState.Designer.cs">
+      <DependentUpon>ChangeGeralState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeJet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeJet.Designer.cs">
+      <DependentUpon>ChangeJet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeSmallPlane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSmallPlane.Designer.cs">
+      <DependentUpon>ChangeSmallPlane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeStatus.Designer.cs">
+      <DependentUpon>ChangeStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostOfFreight1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostOfFreight1.Designer.cs">
+      <DependentUpon>CostOfFreight1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostOfFreight2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostOfFreight2.Designer.cs">
+      <DependentUpon>CostOfFreight2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.cs" />
+    <Compile Include="FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAirplane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAirplane.Designer.cs">
+      <DependentUpon>AddAirplane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenancecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenancecs.Designer.cs">
+      <DependentUpon>Maintenancecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForm1.Designer.cs">
+      <DependentUpon>MaintenanceForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenanceForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceForm2.Designer.cs">
+      <DependentUpon>MaintenanceForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marcacao.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bookings1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings1.Designer.cs">
+      <DependentUpon>Bookings1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemovePlane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemovePlane.Designer.cs">
+      <DependentUpon>RemovePlane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingCostDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingCostDates.Designer.cs">
+      <DependentUpon>ShippingCostDates.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAirplane.resx">
+      <DependentUpon>AddAirplane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCargo.resx">
+      <DependentUpon>AddCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddComercial.resx">
+      <DependentUpon>AddComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJet.resx">
+      <DependentUpon>AddJet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNew.resx">
+      <DependentUpon>AddNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSmallPlane.resx">
+      <DependentUpon>AddSmallPlane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Availability.resx">
+      <DependentUpon>Availability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookings2.resx">
+      <DependentUpon>Bookings2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeAirplane.resx">
+      <DependentUpon>ChangeAirplane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeCargo.resx">
+      <DependentUpon>ChangeCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeComercial.resx">
+      <DependentUpon>ChangeComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeGeralState.resx">
+      <DependentUpon>ChangeGeralState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeJet.resx">
+      <DependentUpon>ChangeJet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeSmallPlane.resx">
+      <DependentUpon>ChangeSmallPlane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeStatus.resx">
+      <DependentUpon>ChangeStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostOfFreight1.resx">
+      <DependentUpon>CostOfFreight1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostOfFreight2.resx">
+      <DependentUpon>CostOfFreight2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenancecs.resx">
+      <DependentUpon>Maintenancecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForm1.resx">
+      <DependentUpon>MaintenanceForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceForm2.resx">
+      <DependentUpon>MaintenanceForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Bookings1.resx">
+      <DependentUpon>Bookings1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemovePlane.resx">
+      <DependentUpon>RemovePlane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingCostDates.resx">
+      <DependentUpon>ShippingCostDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\American Airlines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wings-of-freedom-2021-logo-73F7E468C0-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plussss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ross-parmly-rf6ywHVkrlY-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matteo-fusco-m94kn8Rp61Q-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\204538.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\204538 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windowIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
