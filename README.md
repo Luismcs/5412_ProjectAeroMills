@@ -5,9 +5,9 @@ Plane Company App
 ## Features
 
 - **Login System:** Users can securely log in to the system with their credentials.
-- **Add Planes:** Admins can add new planes to the system, providing details such as model, capacity, and availability.
-- **Booking Functionality:** Users can book available planes for flights.
-- **Maintenance Management:** Admins can put planes into maintenance mode, ensuring they are kept in good condition.
+- **Add Planes:** it's possible to add new planes to the system, providing details such as model, capacity, and availability.
+- **Booking Functionality:** Booking system available planes for flights.
+- **Maintenance Management:** Maintenance System.
 
 ## Technologies Used
 
@@ -15,10 +15,16 @@ Plane Company App
 - .NET Framework
 
 Learnings⚡<br>
-• Classes <br>
+• Inheritance<br>
 • Encapsulation <br>
+• Classes <br>
+• DateTime data<br>
 • Design <br>
 
+
 Future Enhancements: <br>
-• Login <br>
-• Date Incrementation <br>
+• Remove planes <br>
+• Admin and Users different permissions<br>
+• Cancel Maintenance<br>
+• Cancel Booking for a plane<br>
+
