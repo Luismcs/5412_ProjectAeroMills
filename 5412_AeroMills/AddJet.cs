@@ -50,10 +50,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show("There are empty fields.\nPlease fill all the required fields");
                 return;
             }
-            else if (companyJets.ContainsLetters(Particular_capacity.ToString())
-                || companyJets.ContainsLetters(Particular_engineQuantity.ToString())
-                || companyJets.ContainsLetters(Particular_ownersNumber.ToString())
-                || companyJets.ContainsLetters(Particular_freightValue.ToString()))
+            else if (companyJets.ContainsLetters(Particular_capacity.Text)
+                || companyJets.ContainsLetters(Particular_engineQuantity.Text)
+                || companyJets.ContainsLetters(Particular_ownersNumber.Text)
+                || companyJets.ContainsLetters(Particular_freightValue.Text))
             {
                 MessageBox.Show("Make sure Capacity, Engine Quantity, Owners Number and Freight value only contain numbers");
             }

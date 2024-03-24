@@ -31,9 +31,9 @@ namespace WindowsFormsApp1
                 MessageBox.Show("There are empty fields.\nPlease fill all the required fields");
                 return;
             }
-            else if (companyComercial.ContainsLetters(Comercial_capacity.ToString())
-                || companyComercial.ContainsLetters(Comercial_dailyFlightsNumber.ToString())
-                || companyComercial.ContainsLetters(Comercial_engineQuantity.ToString()))
+            else if (companyComercial.ContainsLetters(Comercial_capacity.Text)
+                || companyComercial.ContainsLetters(Comercial_dailyFlightsNumber.Text)
+                || companyComercial.ContainsLetters(Comercial_engineQuantity.Text))
             {
                 MessageBox.Show("Make sure Capacity, Daily Flights Number and Engine Quantity only contain numbers");
             }

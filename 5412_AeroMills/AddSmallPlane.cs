@@ -53,9 +53,9 @@ namespace WindowsFormsApp1
                 MessageBox.Show("There are empty fields.\nPlease fill all the required fields");
                 return;
             }
-            else if (companySmallPlane.ContainsLetters(Avioneta_capacity.ToString())
-                || companySmallPlane.ContainsLetters(Avioneta_engineQuantity.ToString())
-                || companySmallPlane.ContainsLetters(Avioneta_freightValue.ToString()))
+            else if (companySmallPlane.ContainsLetters(Avioneta_capacity.Text)
+                || companySmallPlane.ContainsLetters(Avioneta_engineQuantity.Text)
+                || companySmallPlane.ContainsLetters(Avioneta_freightValue.Text))
             {
                 MessageBox.Show("Make sure Capacity, Engine Quantity and Freight value only contain numbers");
             }
