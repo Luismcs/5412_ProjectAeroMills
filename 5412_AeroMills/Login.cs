@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
     public partial class Login : Form
     {
         Empresa company = new Empresa();
+        string permission;
         public Login()
         {
             InitializeComponent();
@@ -101,12 +102,14 @@ namespace WindowsFormsApp1
             
             if (company.VerifiesLogin(username, password) == true) //verifies if the user exists
             {
-                
-                MainMenu f1 = new MainMenu();
+                permission = company.AccountPermission(username, password);
+
+                MainMenu f1 = new MainMenu(permission);
                 f1.Show();
                 this.Hide();
                 
-            }         
+            }
+
 
         }
 

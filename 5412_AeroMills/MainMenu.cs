@@ -13,16 +13,17 @@ namespace WindowsFormsApp1
     public partial class MainMenu : Form
     {
         Empresa company = new Empresa();
-
+        string accountPermission;
         string dateUpdated;
 
-        public MainMenu()
+        public MainMenu(string permission)
         {
             InitializeComponent();
             company.ReadAllFiles();
             timer1.Start();
             dateLabel.Text = DateTime.Now.ToString("dd/MM/yyyy");
             dateUpdated = dateLabel.Text;
+            accountPermission = permission;
             // Load Form2 into the panel
             FilterForm addnew = new FilterForm(company);
             OpenFormInPanel(addnew);
@@ -45,7 +46,17 @@ namespace WindowsFormsApp1
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-
+            if(accountPermission == "user")
+            {
+                InsertNewPlane.Visible = false;
+                ChangeState.Visible = false;
+                UpdateTime.Visible = false;
+                calculateShipCost.Visible = false;
+                UnderMaitenance.Visible = false;
+                button1.Location = new Point(-3, 193);
+                booking.Location = new Point(-2, 228);
+                Filter.Location = new Point(-2, 264);
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -166,7 +177,7 @@ namespace WindowsFormsApp1
         private void availableAirplanes_Click(object sender, EventArgs e)
         {
             // Load Form2 into the panel
-            Availability addnew = new Availability(company, dateUpdated);
+            Availability addnew = new Availability(company, dateUpdated,accountPermission);
             OpenFormInPanel(addnew);
         }
 

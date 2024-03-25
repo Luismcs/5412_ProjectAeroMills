@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WindowsFormsApp1
 {
@@ -373,6 +374,31 @@ namespace WindowsFormsApp1
             file.Close();
             MessageBox.Show("Username or Password Wrong!\nPlease Try Again.");
             return false; //if the user or password are wrong return false
+        }
+
+        public string AccountPermission(string username, string password)
+        {
+            //If the login data are correct returns true else returns the account permission
+
+            StreamReader file = new StreamReader(@"users.csv");
+
+            string line;
+
+            //Reads the entire file line by line
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] fields = line.Split(';');
+
+                //if the username and the password match
+                if (fields[0] == username && fields[1] == password)
+                {
+                    return fields[3]; //returns the permission
+
+                }
+            }
+            file.Close();
+            return "no";
+
         }
 
         public void VerifySpace (string username, string password) //verifies if there are spaces

@@ -15,11 +15,13 @@ namespace WindowsFormsApp1
     {
         Empresa companyA = new Empresa();
         string dateUpdated;
-        public Availability(Empresa company, string updatedDate)
+        string accountPermission;
+        public Availability(Empresa company, string updatedDate,string permission)
         {
             InitializeComponent();
             dateUpdated = updatedDate;
             companyA=company;
+            accountPermission = permission;
 
         }
 
@@ -50,6 +52,11 @@ namespace WindowsFormsApp1
         private void Availability_Load(object sender, EventArgs e)
         {
             companyA.ListsAvailablePlanes(dataGridView1);
+
+            if (accountPermission == "user")
+            {
+                button2.Visible = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
